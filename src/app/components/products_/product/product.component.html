@@ -1,21 +1,26 @@
-<div class="border rounded-lg shadow-lg">
+<div class="border rounded-lg shadow-lg pb-5">
     <div>
-        <img class="rounded-lg" src="../../../assets/product.jpg" alt="product">
+        <img class="rounded-lg" [src]="product?.thumbnail" alt="product" class="h-60 w-full object-cover object-center rounded-t-lg">
     </div>
-    <div class="py-3 px-2">
-        <h4 class="text-lg uppercase">
-            Gift Cards
-        </h4>
-        <p class="mt-3 text-sm">
-            This is the gift card that you would want.
+    <div class="mt-3 py-3 px-2">
+        <div class="">
+            <h4 class="text-sm font-semibold uppercase">
+                {{product?.title}}
+            </h4>
+            <p class="text-xs bg-green-300 rounded-md px-4 py-1 inline-block">
+                {{product?.brand}}
+            </p>
+        </div>
+        <p class="mt-4 text-sm">
+            {{ product?.description }}
         </p>
-        <p class="mt-3 font-semibold w-full flex">
-            <span> $50 </span>
-            <span class="ml-3 line-through font-normal text-red-400">
-                $60
+        <p class="mt-3 font-semibold w-full flex items-center">
+            <span class="text-xl font-normal"> ${{product?.price}}</span>
+            <span class="ml-3 text-red-400 text-xs">
+                {{product?.discountPercentage}}% discount
             </span>
-            <span class="text-sm font-normal ml-auto">
-                10 on stock
+            <span class="text-xs ml-auto">
+                {{product?.stock}} on stock
             </span>
         </p>
     </div>

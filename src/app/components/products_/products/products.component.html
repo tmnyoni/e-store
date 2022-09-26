@@ -1,10 +1,6 @@
-<div class="w-full mt-4 mb-6">
+<div class="w-full mt-8 mb-6">
     <div class="md:grid md:grid-cols-3 lg:grid-cols-3 gap-x-5 gap-y-6  mx-1">
-        <app-product></app-product>
-        <app-product></app-product>
-        <app-product></app-product>
-        <app-product></app-product>
-        <app-product></app-product>
-        <app-product></app-product>
+        <app-product *ngFor="let product of products; let index = index" [product]="product">
+        </app-product>
     </div>
 </div>
