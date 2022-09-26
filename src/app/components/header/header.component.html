@@ -1,7 +1,7 @@
 <header class="">
     <nav class="flex items-center justify-between px-4 py-2 relative">
         <div class="flex items-center">
-            <button onclick="onToggleMenu()">
+            <button (click)="onToggleMenu()" class="hover:ring-1 hover:text-gray-600 focus:text-gray-700 rounded px-1 focus:ring-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div *ngIf="isMenuToggled"
-            class="absolute border bg-white rounded-lg px-8 py-8 sm:top-12 sm:w-96 h-96 sm:h-auto left-1 z-10 right-1 top-4 sm:right-auto">
+            class="absolute border shadow-lg bg-white rounded-lg px-8 py-8 sm:top-12 sm:w-96 h-96 sm:h-auto left-1 z-10 right-1 top-4 sm:right-auto">
             <div class="py-2 border-b"> Foods </div>
             <div class="py-2 border-b"> Fashion </div>
             <div class="py-2 border-b"> Gadgets </div>

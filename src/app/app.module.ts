@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FeaturedComponent } from './components/products_/featured/featured.component';
 import { ProductsComponent } from './components/products_/products/products.component';
 import { ProductComponent } from './components/products_/product/product.component';
+import { UpButtonComponent } from './components/up-button/up-button.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProductComponent } from './components/products_/product/product.compone
     FeaturedComponent,
     ProductsComponent,
     ProductComponent,
+    UpButtonComponent,
   ],
   imports: [
     BrowserModule,
