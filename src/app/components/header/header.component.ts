@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   title = "e-store";
+  isMenuToggled = false;
   
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onToggleMenu(): void{
+    this.isMenuToggled = !this.isMenuToggled;
+  }
 }
